@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <h1>TO-DO Listesi</h1>
+        <h3>Odun ateşe ben sana yanarım ancak işlerini halledersen</h3>
+        <input type="text" id="myInput" placeholder="Yapilacaklar..." style="margin-top: 100px;">
+        <span onclick="newElement()" class="addBtn" style="margin-top: 100px;">Ekle</span>
+      </div>
+      <table style="margin-right: auto; margin-left: auto; margin-top: 200px;">
+        <tr>
+            <th><h2 style="position: sticky; margin-right: 200px; color: white;">Yapilacaklar</h4></th>
+            <th><h2 style="position: sticky; margin-right: 200px; color: white;">Surec Isleminde</h4></th>
+            <th><h2 style="position: sticky; margin-right: 200px; color: white;">Tamamlanmis</h4></th>
+        </tr>
+        <th>
+            <ul id="todo" style="margin-right: 125px; color: white;">
+                
+        </ul>
+        </th>
+        <th>
+            <ul id="onProgress"  style="margin-right: 125px; color: white;" >
+              
+            </ul>
+        </th>
+        <th>
+            <ul id="Completed" style="margin-right: 125px; color: white;">
+                
+            </ul>
+        </th>
+        </table>
+      <script src="js/main.js"></script>
+</body>
+</html>
