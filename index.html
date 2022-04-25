@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <img src="img/logo.png" style="width: 200px;height: 200px; left: 2%; top: 1%; position: absolute;">
+        <h1 style="display: inline;">TO-DO Listesi</h1>
+        <div id="MyClockDisplay" class="clock" onload="startTime()"></div>
+        <h3> İsteyip de başaramayacağın hiçbir şey yoktur ..!</h3>
+        <h4>(Finaller hariç)</h4>
+        <input type="text" id="myInput" placeholder="Yapilacaklar..." style="margin-top: 100px; margin-left: 300px;">
+    </div>
+
+    <div style="margin-left: 400px; color: white;">
+        <p style="display: inline; margin-left: 250px;">Lütfen bir zorluk seçiniz</p> 
+        <br><br><br>
+        <div class="rdb">
+            <input type="radio" id="easy" name="Dif" value="kolay">
+            <label for="easy" style="display: inline;">Kolay</label>
+        </div>
+
+        <div class="rdb">
+            <input type="radio" id="med" name="Dif" value="orta">
+            <label for="med">Orta</label>
+        </div>
+
+        <div class="rdb">
+            <input type="radio" id="hard" name="Dif" value="zor">
+            <label for="hard">Zor</label>
+        </div>
+        <br>
+        <div class="vertical-center">
+            
+        </div>
+        <span onclick="newElement()" class="addBtn" style="margin-top: 50px; margin-left: 150px;">Ekle</span>
+    </div>
+
+    <table style="margin-right: auto; margin-left: auto; margin-top: 200px;">
+    <tr>
+        <th><h2 style="position: sticky; margin-right: 200px; color: white;">Yapilacaklar</h4></th>
+        <th><h2 style="position: sticky; margin-right: 200px; color: white;">Surec Isleminde</h4></th>
+        <th><h2 style="position: sticky; margin-right: 200px; color: white;">Tamamlanmis</h4></th>
+    </tr>
+    <th>
+        <ul id="todo" style="margin-right: 125px; color: white;">
+            
+    </ul>
+    </th>
+    <th>
+        <ul id="onProgress"  style="margin-right: 125px; color: white;" >
+            
+        </ul>
+    </th>
+    <th>
+        <ul id="Completed" style="margin-right: 125px; color: white;">
+        </ul>
+    </th>
+    </table>
+    <!-- <span onclick="revertElement()" class="revertBtn" style="margin-top: 100px; margin-left: 550px;">Geri Al</span>
+    <span onclick="revertElement2()" class="revertBtn" style="margin-top: 100px; margin-left: 300px; background-color: black; color: white;">Geri Al</span> -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>
